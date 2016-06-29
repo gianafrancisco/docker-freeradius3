@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 
 #ADD  fs/ /
 COPY fs/opt/freeradius.tar.bz2 /opt/
@@ -14,4 +14,3 @@ RUN apt-get update && \
 EXPOSE 1812 1813
 
 ENTRYPOINT /init.sh
-
